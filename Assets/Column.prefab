@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 608051697497502808}
   m_Layer: 0
   m_Name: column 1
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26,8 +26,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 608051697497502789}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -3.81, z: 1.85}
-  m_LocalScale: {x: 3.34, y: 3.34, z: 3.34}
+  m_LocalPosition: {x: 0, y: -5.8695, z: 1.85}
+  m_LocalScale: {x: 3.34, y: 5.9144716, z: 3.34}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 608051698793033125}
@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 608051697654055673}
   m_Layer: 0
   m_Name: column 1 (1)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -137,8 +137,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 608051697654055674}
   m_LocalRotation: {x: 0, y: 0, z: -1, w: 0}
-  m_LocalPosition: {x: 0, y: 3.95, z: 1.85}
-  m_LocalScale: {x: 3.34, y: 3.34, z: 3.34}
+  m_LocalPosition: {x: 0, y: 6.1279, z: 1.85}
+  m_LocalScale: {x: 3.34, y: 6.062309, z: 3.34}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 608051698793033125}
@@ -233,9 +233,10 @@ GameObject:
   - component: {fileID: 608051698793033125}
   - component: {fileID: 608051698793033146}
   - component: {fileID: -8476952832481333474}
+  - component: {fileID: 56226382759962370}
   m_Layer: 0
   m_Name: Column
-  m_TagString: Untagged
+  m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -276,8 +277,34 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 608051698793033124}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9bed90a5bf24f85459ca795e08a0d8bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &56226382759962370
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608051698793033124}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.385835, y: -0.034288883}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.6228218, y: 4.0860043}
+  m_EdgeRadius: 0

@@ -17,6 +17,6 @@ public class Column : MonoBehaviour
         if (transform.position.x < -4) { 
             Destroy(transform.gameObject);
         }
-        Debug.Log(transform.position.x);
+        //Debug.Log(transform.position.x);
     }
 }   

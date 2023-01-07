@@ -2,21 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-
     public GameObject column;
+    bool game_started = false;
 
+    public GameObject start_panel;
 
     void Start()
     {
-        StartCoroutine(CreateColumn());
+        Time.timeScale = 0;
     }
 
 
     void Update()
-    { 
+    {
+        if (Input.GetKeyDown(KeyCode.Space) && game_started == false){
+            Time.timeScale = 1;
+            StartCoroutine(CreateColumn());
+            game_started = true;
+
+            start_panel.SetActive(false);
+        }
     }
 
     IEnumerator CreateColumn(){
@@ -27,4 +36,7 @@ public class GameManager : MonoBehaviour
         StartCoroutine(CreateColumn());
     }
 
+    public void RestartGame() {
+        SceneManager.LoadScene("Game");
+    }
 }

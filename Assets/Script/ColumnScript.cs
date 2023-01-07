@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ColumnScript : MonoBehaviour
 {
-    public GameObject go;
+    
     void Start()
     {
         
@@ -13,10 +13,7 @@ public class ColumnScript : MonoBehaviour
 
     void Update()
     {
-        if (transform.position.x < -4 ) {
-            Destroy(go); 
-        }
-        Debug.Log(go.transform.position.x);
+       
 
     }
 }

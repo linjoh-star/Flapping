@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Floor
+  - Point
   layers:
   - Default
   - TransparentFX
@@ -52,4 +54,7 @@ TagManager:
     locked: 0
   - name: bird
     uniqueID: 1101845797
+    locked: 0
+  - name: UI
+    uniqueID: 1991412269
     locked: 0
