@@ -261,6 +261,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txt_points: {fileID: 930220066}
+  lose: {fileID: 8300000, guid: 18a3ea84f4e2bf241b4a7ec586dd29a8, type: 3}
   gameover_panel: {fileID: 506602937}
 --- !u!95 &113767739
 Animator:
@@ -538,7 +539,7 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 506602937}
-  m_CullTransparentMesh: 1
+  m_CullTransparentMesh: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
