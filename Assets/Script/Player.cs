@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
     }
 
     void Update()
-    { 
+    {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(0, 7);
