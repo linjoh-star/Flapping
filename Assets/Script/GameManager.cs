@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         Time.timeScale = 0;
+        Screen.SetResolution(540, 960, false);
     }
 
 
