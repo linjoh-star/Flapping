@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
     public Text txt_points;
-    int points = 0;
+    public int points = 0;
     public GameObject gameover_panel;
     public AudioClip lose;
 
@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(0, 7);
+            GetComponent<Rigidbody2D>().velocity = new Vector2(0, 6.5f);
             GetComponent<Animator>().Play("fly", 0, 0);
         }
     }

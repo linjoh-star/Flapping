@@ -7,7 +7,7 @@ public class Column : MonoBehaviour
     float offset;
     void Start()
     {
-        offset = Random.Range(0, 2 * Mathf.PI);
+        offset = Random.Range(0, 1.8f  * Mathf.PI);
     }
 
 
