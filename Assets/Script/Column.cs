@@ -19,7 +19,7 @@ public class Column : MonoBehaviour
             Destroy(transform.gameObject);
         }
         
-        transform.position = transform.position + (Vector3.up * Mathf.Sin(Time.time * 2f + offset) / 40);
+        transform.position = transform.position + (Vector3.up * Mathf.Cos(Time.time * 2f + offset) / 40);
 
 
         //Debug.Log(transform.position.x);
